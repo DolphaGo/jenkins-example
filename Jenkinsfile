@@ -61,7 +61,7 @@ pipeline {
               success {
                   echo 'Successfully Cloned Repository'
 
-                  mail  to: 'adamdoha@naver.com',
+                  mail  to: 'dev.dolphago@gmail.com',
                         subject: "Deploy Frontend Success",
                         body: "Successfully deployed frontend!"
 
@@ -70,7 +70,7 @@ pipeline {
               failure {
                   echo 'I failed :('
 
-                  mail  to: 'adamdoha@naver.com',
+                  mail  to: 'dev.dolphago@gmail.com',
                         subject: "Failed Pipelinee",
                         body: "Something is wrong with deploy frontend"
               }
@@ -148,7 +148,7 @@ pipeline {
 
           post {
             success {
-              mail  to: 'adamdoha@naver.com',
+              mail  to: 'dev.dolphago@gmail.com',
                     subject: "Deploy Success",
                     body: "Successfully deployed!"
                   
